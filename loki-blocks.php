@@ -4,7 +4,7 @@
  * Description: Blocks for use with the Loki theme, developed by Logic Design
  * Author: Logic Design & Consultancy Ltd
  * Author URI: https://www.logicdesign.co.uk/
- * Version: 1.0.3
+ * Version: 1.0.4
  * License: GPL-3.0+
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  *
