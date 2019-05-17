@@ -79,13 +79,15 @@
 		save: function(props) {
 			var attributes = props.attributes;
 			return (
-				el('a', {
-						className: 'btn btn-primary',
-						'href': attributes.button_url,
-						'target': attributes.button_target,
-						'rel': 'noopener noreferrer',
-					},
-					attributes.button_text
+				el('P', {},
+					el('a', {
+							className: 'btn btn-primary',
+							'href': attributes.button_url,
+							'target': attributes.button_target,
+							'rel': 'noopener noreferrer',
+						},
+						attributes.button_text
+					)
 				)
 			);
 		},
