@@ -1,0 +1,23 @@
+.collapse-wrapper {
+	padding: 20px;
+	border: solid 1px #0073aa;
+	position: relative;
+	&:before {
+		position: absolute;
+		top: -10px;
+		height: 20px;
+		line-height: 20px;
+		text-transform: uppercase;
+		background-color: #0073aa;
+		padding: 0 20px;
+		font-size: 10px;
+		content: "Expandable Content";
+		font-family: sans-serif;
+		color: white;
+	}
+	.button-wrapper {
+		border-bottom: solid 1px #0073aa;
+		display: inline-block;
+		font-weight: bold;
+	}
+}

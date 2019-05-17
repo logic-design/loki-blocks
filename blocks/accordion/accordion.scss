@@ -1,0 +1,57 @@
+.loki-accordion-block {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-color: #f4f4f4;
+	margin-bottom: 10px;
+	border: solid 1px #eee;
+	input {
+		position: absolute;
+		opacity: 0;
+	}
+
+	label.loki-accordion-question {
+		position: relative;
+		display: block;
+		padding: 10px 15px;
+		margin: 0;
+		cursor: pointer;
+		font-weight: 700;
+		background-color: #f4f4f4;
+	}
+
+	.loki-tab-answer {
+		max-height: 0;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		.loki-tab-content {
+			padding: 15px;
+		}
+	}
+
+	input:checked ~ .loki-tab-answer {
+		max-height: inherit;
+		border-top: solid 1px #eee;
+	}
+
+	label::after {
+		display: block;
+		padding: 0.5em 1em;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: all .25s;
+	}
+
+	input[type=checkbox] + label::after {
+		content: "\f107";
+		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
+		transform: rotate(-90deg);
+	}
+
+	input[type=checkbox]:checked + label::after {
+		transform: rotate(0deg);
+	}
+}
